@@ -1,0 +1,52 @@
+#creating a list for the weekdays
+days_of_week=['Sun','Mon','Tue','Wed','Thur','Fri','Sat']
+days_of_week.reverse()
+print(days_of_week)
+
+
+#looping through the list
+for count in range(len(days_of_week)):
+    print(days_of_week[count])
+
+#changing an element of a list object 
+days_of_week[0]='Sunday'
+
+#demonstrating the ability to work with list as a single unit
+print(days_of_week)
+
+print(days_of_week[2:5])
+
+# creating a nested list
+child1 = ['Pat', 5, 6.5]
+family = [child1]
+print (family [0] [1] )
+
+#adding elements to the lists
+my_list=[]
+my_list.append(10)
+my_list.append('ten')
+print(my_list)
+
+my_list.extend([20,'twenty'])
+print(my_list)
+
+my_list=my_list +[30,'thirty']
+print(my_list)
+
+#inserting elements in the list
+my_list.insert(2,40)
+print(my_list)
+
+#removing elements from the lists
+my_list.remove(40)
+print(my_list)
+
+my_numbers=[16,8,15,42,23,4]
+print(max(my_numbers))
+print(min(my_numbers))
+
+my_numbers.sort()
+print(my_numbers)
+
+my_numbers.reverse()
+print(my_numbers)

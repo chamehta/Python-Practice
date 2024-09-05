@@ -1,0 +1,49 @@
+#creating a dictionary
+days_in_months={'Jan':31,'Feb':28,'March':31}
+print(days_in_months['Jan'])
+
+#you can add key value pair one line at a time
+
+#printing keys and value functions
+print(days_in_months.keys())
+print(days_in_months.values())
+print(days_in_months.items())
+
+#testing keys in a dictionary
+print('Feb' in days_in_months)
+
+#adding values in the dictionary
+days_in_months['April']=24
+print(days_in_months])
+days_in_months['April']=30
+
+#combining two dictionaries
+my_dictionary={}
+
+days_in_month = {'Jan':31, 'Feb':28, 'Mar':31} 
+days_in_month2 = {'Apr':30, 'May':31, 'Jun':30}
+days_in_month.update(days_in_month2)
+print (days_in_month.items())
+
+
+#removing elements from a dictionary
+del days_in_month['Feb']
+print(days_in_month)
+
+odds={'one':1,'three':3,'Five':5}
+evens={'two':2,'four':4,'six':6}
+odds.clear()
+print('After cleaning odds:')
+print(odds)
+
+del evens
+print('after cleaning evens:')
+print(evens)
+
+#accesing values using get function
+print(days_in_month.get('January'))
+
+print(days_in_month.get('January','January is not present'))
+
+
+

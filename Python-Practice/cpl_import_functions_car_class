@@ -1,0 +1,4 @@
+from cpl_class_car import cars
+
+my_car=cars()
+my_car.manufacture_car()

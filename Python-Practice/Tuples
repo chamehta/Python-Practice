@@ -1,0 +1,18 @@
+tuple=()
+print(tuple)
+
+tuple=(1,2,3,4,'Chandan',[2,3,4],(1,2,3))
+print(tuple)
+print(type(tuple))
+
+ls=[1,2,"hell0",4.4]
+print(ls)
+
+#slice  a tuple
+print(tuple[1:3])
+
+#change elements in Tuple
+print(tuple)
+tuple[2]=4
+
+

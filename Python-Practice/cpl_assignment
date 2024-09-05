@@ -1,0 +1,7 @@
+# ask user to enter inputs
+phrase = input("please enter the phrase ")
+
+start_slice = int(input("enter the begining of the slice "))
+end_slice = int(input("enter the end of the slice "))
+
+print(phrase[start_slice:end_slice])

@@ -1,0 +1,21 @@
+from tkinter import *
+class MyFrame(Frame): # creating a subclass from super class
+   def __init__(self):
+       Frame.__init__(self) # calling the comstructor of frame super class
+       self.master.geometry("250x200") # in order to set the geometry of the frame
+       self.master.title("My GUI")  # title of the frame
+       self.grid() 
+       
+       self.button_click_here =Button( self, text="click here", command =self.click_here_click) # configuring a button
+       self.button_click_here.grid() # adding the button on frame
+       self.my_text= StringVar()   # stringvar is new type of datatype that lets you change the value of textvariable at run time. it is called a control variable
+       self.message= Label(self, textvariable=self.my_text)   #text variable to change the value of text during run time
+       #self.message = Label(self, text = "Hello World!") # configuring text on the frame
+       self.message.grid() # adding text to the frame
+
+   def click_here_click(self): #
+      # print("you did it!")
+      self.my_text.set("You did it!")
+
+frame01 = MyFrame()
+frame01.mainloop()

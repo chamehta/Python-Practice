@@ -1,0 +1,11 @@
+#concatenating strings
+print("New "+"York")
+
+#multiplying strings
+print("and over "*5)
+
+#formating trick
+print("="*100)
+
+#string manipulation functions
+print(len("Chandandeep"))

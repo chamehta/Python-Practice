@@ -1,0 +1,30 @@
+value =  eval(input("Enter a number: "))
+
+try:
+   age = eval( input('Please enter your age: ') )
+   ten_years = age + 10
+   print ("In 10 years, you'll be", ten_years)
+except (SyntaxError, NameError):
+   print ("You must enter a number for your age")
+except NameError:
+    print("you must enter a number for your age")
+
+print ("Have a nice day. Goodbye.")
+
+
+try:
+   age = eval( input("Please enter your age: ") )
+   ten_years = age + 10
+   print ("In 10 years, you'll be", ten_years)
+except NameError:
+   print ("A NameError has occurred")
+except Exception:
+   print ("Something unexpected has happened")
+
+print ("Have a nice day. Goodbye.")
+
+try:
+   my_list = [0, 1, 2]
+   print (my_list [4])
+except IndexError as ie:
+   print (ie)

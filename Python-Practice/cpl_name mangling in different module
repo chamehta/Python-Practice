@@ -1,0 +1,18 @@
+from cpl_name_mangling import Time
+
+mytime1=Time()
+mytime1.print_time()
+
+mytime1.__seconds=22
+
+mytime1.get_second()
+mytime1.set_second(int(23))
+
+mytime1.get_second()
+
+mytime1._Time__second=25
+
+#special attribute to print the doc string
+print (mytime1.__doc__)
+
+print(mytime1.__class__)

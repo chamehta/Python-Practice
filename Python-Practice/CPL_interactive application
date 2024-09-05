@@ -1,0 +1,10 @@
+#echo program to interact with the user
+variable= input("Please enter your name ")
+print(variable)
+
+#converting it to integer type
+age= input("Please enter your age ")
+future_age=10+int(age)
+print(future_age)
+
+#math library is agood start

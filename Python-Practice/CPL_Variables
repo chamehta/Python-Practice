@@ -1,0 +1,37 @@
+# storing variables
+import keyword
+shoe_size = 10
+print(shoe_size)
+
+shoe_size = 10.5
+print(shoe_size)
+
+# printing the list of reserved keywords
+print(keyword.kwlist)
+
+# storing string characters
+quote = 'the women all said."Hello"'
+print(quote)
+
+quote = "the women all said.'Hello'"
+print(quote)
+
+# escape characters
+quote = "the women all said.\"Hello\""
+print(quote)
+
+# formating your output
+text = "My\tname is \nChandan"
+print(text)
+
+# you can store multiple data type in a python variabel at a time
+data = 4
+print(data)
+data = -12.3
+print(data)
+data = 'hello there'
+print(data)
+
+a, b = 1, 2
+print(a)
+print(b)
